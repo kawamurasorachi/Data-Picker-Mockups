@@ -1,0 +1,27 @@
+{% load static %}
+<header>
+    <h1>InfoPicker</h1>
+    <ul>
+        <a href="">
+            <li>HOME</li>
+        </a>
+        <a href="">
+            <li>TREND</li>
+        </a>
+        <a href="">
+            <li>DISCUSS</li>
+        </a>
+        <a href="">
+            {% if user.is_authenticated %}
+            {% if user.socialaccount_set.all.0.get_avatar_url %}
+            <li>
+                <img class="header-user-icon" src="{{ user.socialaccount_set.all.0.get_avatar_url }}"
+                    alt="{{user.username}}">
+            </li>
+            {% else %}
+            <li><img class="header-user-icon" src="{% static 'images/nouser.png' %}" alt="{{user.username}}"></li>
+            {% endif %}
+            {% endif %}
+        </a>
+    </ul>
+</header>
