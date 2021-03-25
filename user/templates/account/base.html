@@ -1,0 +1,29 @@
+{% load sass_tags %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{% block head_title %}{% endblock %} | Twitter抽選 - TwiChu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% sass_src 'css/base.scss' %}">
+  <link rel="stylesheet" href="{% sass_src 'css/accounts.scss' %}">
+  {% block extra_head %}
+  {% endblock %}
+  {% include 'icon.html' %}
+</head>
+
+<body>
+  {% include 'header.html' %}
+  <div class="wrapper-accounts">
+    <div class="accounts">
+      {% block body %}
+      {% block content %}
+      {% endblock %}
+      {% endblock %}
+      {% block extra_body %}
+      {% endblock %}
+    </div>
+  </div>
+</body>
+
+</html>
