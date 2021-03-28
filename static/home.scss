@@ -1,0 +1,18 @@
+.sidebar-user {
+    display: flex;
+    text-decoration: none;
+    color: rgb(93, 93, 93);
+    height: 100px;
+    width: 100%;
+
+    .user-icon {
+        margin: 10px;
+        height: 80px;
+        border-radius: 100%;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 100px;
+    }
+}

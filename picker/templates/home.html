@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load sass_tags %}
+{% block head %}
+<link rel="stylesheet" href="{% sass_src 'home.scss' %}">
+{% endblock %}
+{% block content %}
+<aside>
+    <a class="sidebar-user" href="/accounts/logout/">
+        {% if user.is_authenticated %}
+        {% if user.socialaccount_set.all.0.get_avatar_url %}
+        <img class="user-icon" src="{{ user.socialaccount_set.all.0.get_avatar_url }}" alt="{{user.username}}">
+        {% else %}
+        <img class="user-icon" src="{% static 'images/nouser.png' %}" alt="{{user.username}}">
+        {% endif %}
+        {% endif %}
+        <p>{{user.username}}</p>
+    </a>
+    <ul>
+
+        {% for topic in topics_list %}
+        <li><a href="/{{topic.id}}">{{topic}}</a></li>
+        {% endfor %}
+
+    </ul>
+</aside>
+<article>
+</article>
+{% endblock %}

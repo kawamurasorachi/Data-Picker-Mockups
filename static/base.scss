@@ -17,11 +17,13 @@ body {
 
     aside {
         flex: 1;
+        border-right: 1px #ddd solid;
     }
 
     article {
         flex: 5;
     }
+
 }
 
 header {
@@ -29,6 +31,8 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 0 10%;
+    box-shadow: 10px 10px 10px -15px rgba(0, 0, 0, 0.5);
+    z-index: 999;
 
     h1 {
         line-height: 100px;
@@ -53,17 +57,13 @@ header {
         font-weight: 800;
         font-size: 22px;
     }
-
-    img {
-        margin: 10px;
-        height: 80px;
-        border-radius: 100%;
-    }
 }
 
 footer {
     height: 100px;
     text-align: center;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.5);
+    z-index: 999;
 
     p {
         line-height: 100px;

@@ -1,31 +1,31 @@
 :root {
-    @media (prefers-color-scheme: light) {
-        --color-header: #d2e0e4;
-        --color-selected: #dadcdd;
-        --color-background: #eef3f5;
-        --color-background2: linear-gradient(90deg,
-                rgb(174, 0, 255) 0%,
-                rgb(209, 108, 175) 50%,
-                rgb(255, 166, 0) 100%);
-        --color-font: #383838;
-        --neumorphism: 4.5px 4.5px 9px #cbcbcb, -4.5px -4.5px 9px #ffffff;
-        --svg-fill: #383838;
-    }
+    // @media (prefers-color-scheme: light) {
+    --color-header: #d2e0e4;
+    --color-selected: #dadcdd;
+    --color-background: #eef3f5;
+    // --color-background2: linear-gradient(90deg,
+    //         rgb(174, 0, 255) 0%,
+    //         rgb(209, 108, 175) 50%,
+    //         rgb(255, 166, 0) 100%);
+    --color-font: #383838;
+    --neumorphism: 4.5px 4.5px 9px #cbcbcb, -4.5px -4.5px 9px #ffffff;
+    --svg-fill: #383838;
+    // }
 
-    @media (prefers-color-scheme: dark) {
-        --color-header: #18191a;
-        --color-selected: #242627;
-        --color-background: #2c3031;
-        --color-background2: linear-gradient(90deg,
-                rgb(174, 0, 255) 0%,
-                rgb(90, 195, 243) 50%,
-                rgb(0, 255, 119) 100%);
-        --color-font: #bebebe;
-        --neumorphism: 6px 6px 12px #0e0e0e, -4px -4px 10px rgba(95, 94, 94, 0.25);
-        --svg-fill: #bebebe;
-    }
+    // @media (prefers-color-scheme: dark) {
+    //     --color-header: #18191a;
+    //     --color-selected: #242627;
+    //     --color-background: #2c3031;
+    //     --color-background2: linear-gradient(90deg,
+    //             rgb(174, 0, 255) 0%,
+    //             rgb(90, 195, 243) 50%,
+    //             rgb(0, 255, 119) 100%);
+    //     --color-font: #bebebe;
+    //     --neumorphism: 6px 6px 12px #0e0e0e, -4px -4px 10px rgba(95, 94, 94, 0.25);
+    //     --svg-fill: #bebebe;
+    // }
 
-    --neumorphism-grad: linear-gradient(135deg, rgba(1, 0, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    // --neumorphism-grad: linear-gradient(135deg, rgba(1, 0, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
 }
 
 $header-color: var(--color-header);
